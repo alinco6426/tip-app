@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">  
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <div class="splitter">
+    <span>S</span>
+    <span>P</span>
+    <span>L</span>
+    <span>I</span>
+    <span>T</span>
+    <span>T</span>
+    <span>E</span>
+    <span>R</span>
+  </div>
+  <div class="container">
+  <div class="firstcol">
+    <h5> Bill</h5>
+    <span>
+      <img src="icon-dollar.svg" alt="dollar sign">
+      <input type="text" name="bill" id="bill">
+    </span>
+    <p id="notify"></p>
+    <h5>Select Tip %</h5>
+    <div class="values">
+      <input type="button" class="wer" value=" 5%" onclick="first()">
+      <input type="button" class="were" value="10%" onclick="second()">
+      <input type="button" class="yyt" value=" 15%" onclick="third()">
+      <input type="button" class="rew" value=" 25%" onclick="fourth()">
+      <input type="button" class="reww" value="50%" onclick="fifth()">
+      <input type="text" class="rtrt" placeholder="Custom" id="custom" onclick="sixth()">
+    </div>
+    <h5> Number of People</h5>
+    <span>
+    <img src="icon-person.svg" alt="person">
+    <input type="text" name="people" id="people">
+    </span>
+    <p id="alert"></p>
+  </div>
+  <div class="secondcol">
+    <div class="right">
+     <h4> Tip Amount <br>
+      <small> / person</small>
+    </h4>
+      <h2 id="result">$ 0</h2>
+    </div>
+    <div class="right">
+        <h4>Total <br>
+           <small> / person</small>
+        </h4>
+      <h2 id="total">$ 0</h2>
+    </div>
+    <input type="button" value="Reset" onclick="reset()" id="button">
+  </div> 
+</div> 
+<script src="func.js"></script>
+</body>
+</html>

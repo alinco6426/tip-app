@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+body{
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono';
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.splitter {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: fit-content;
+    justify-content: center;
+    width: 100%;
+    margin: 40px 0;
+}
+.splitter span{
+    margin: 10px;
+    font-size: larger;
+    font-weight: bold;
+    color:  hsl(183, 100%, 15%);
+}
+.container{
+    background-color: white;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    padding: 20px 50px;
+    border-radius: 10px;
+    height: 620px;
+}
+.firstcol{
+    width: 50%;
+    margin-right: 40px;
+    height: 450px;
+}
+.firstcol span{
+    background-color: hsl(189, 41%, 97%);
+    padding: 8px;
+    display: flex;
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    color: hsl(183, 100%, 15%);
+}
+.firstcol input[type=text]:not(.values input[type=text]){
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    height:1005;
+    text-align: right;
+    font: large 'space mono';
+    font-weight: 900;
+    color: hsl(183, 100%, 15%);
+}
+.secondcol{
+    background-color: hsl(183, 100%, 15%);
+    width: 50%;
+    border-radius: 8px;
+    padding: 30px;
+    position: relative;
+    height: 500px;
+    margin-top: 20px;
+}
+.secondcol #button{
+    width: calc(100% - 20px);
+    padding: 20px;
+    display: block;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+    color: hsl(183, 100%, 15%);
+    border: none;
+    background-color: hsl(172, 67%, 45%);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 10px;
+    font: large 'space mono';
+    font-weight: 900;
+}
+.secondcol .right{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.values{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    padding: 20px 0;
+}
+.values input[type=button]{
+    width: 100px;
+    margin: 10px 0;
+    padding: 10px;
+    background-color:hsl(183, 100%, 15%) ;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font: large 'space mono';
+    font-weight: 900;
+}
+.values input[type=button]:hover{
+    background-color: hsl(172, 67%, 45%);
+    color: black;
+    transition: all 0.7s;
+}
+.values input[type=text]{
+    width: 100px;
+    padding: 0;
+    height: 45px;
+    margin: 10px 0;
+    text-align: center;
+    font: large 'space mono';
+    font-weight: 900;
+    color: hsl(183, 100%, 15%);
+    background-color:hsl(185, 41%, 84%) ;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+h5{
+   color:  hsl(183, 100%, 15%);
+   margin: 30px 0;
+}
+h4{
+    color: white;
+}
+h4 small{
+    color:  hsl(185, 41%, 84%);   
+}
+h2{
+    color: hsl(172, 67%, 45%);
+}
+#alert,#notify{
+    color: red;
+    margin: 10px 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+ @media screen and (max-width:600px) {
+    .container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        padding: 0;
+        border-radius: 0px;
+        height: 100%;
+    }
+    .firstcol{
+        width: 100%;
+        padding: 30px;
+        height: 50%;
+    }
+    .values{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 100%;
+        grid-gap: 10px;
+    }
+    .values input{
+        min-width: 100%;  
+        padding: 30px;
+    }
+    .secondcol{
+        width: 100%;
+        border-radius: none;
+    }
+    .firstcol span{
+        padding: 10px;
+        height: 60px;
+        width: 100%;
+        margin: 20px 0;
+    }
+    h5{
+        font-size: 20px;
+        margin:  30px 0;
+    }
+    h2,h4{
+        font-size: xx-large;
+    }
+    h4 small{
+        font-size: smaller;
+    }
+ }
