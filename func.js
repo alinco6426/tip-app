@@ -14,8 +14,8 @@ function first(){
     if(firstValue == "" || secondValue == ""){
         document.getElementById("alert").innerHTML = "Both input must be filled ";
         document.getElementById("notify").innerHTML = "Both input must be filled ";
-        document.getElementById("total").innerHTML = "$ 0";
-        document.getElementById("result").innerHTML = "$ 0";
+        document.getElementById("total").innerHTML = "$ 0.00";
+        document.getElementById("result").innerHTML = "$ 0.00";
        } else{
         document.getElementById("total").innerHTML = "$" + " " +total.toFixed(2);
         document.getElementById("result").innerHTML = "$" + " " + result.toFixed(2);
@@ -39,8 +39,8 @@ function second(){
     if(firstValue == "" || secondValue == ""){
         document.getElementById("alert").innerHTML = "Both input must be filled ";
         document.getElementById("notify").innerHTML = "Both input must be filled ";
-        document.getElementById("total").innerHTML = "$ 0";
-        document.getElementById("result").innerHTML = "$ 0";
+        document.getElementById("total").innerHTML = "$ 0.00";
+        document.getElementById("result").innerHTML = "$ 0.00";
        } else{
         document.getElementById("total").innerHTML = "$" + " " +total.toFixed(2);
         document.getElementById("result").innerHTML = "$" + " " + result.toFixed(2);
@@ -65,8 +65,8 @@ function third(){
     if(firstValue == "" || secondValue == ""){
         document.getElementById("alert").innerHTML = "Both input must be filled ";
         document.getElementById("notify").innerHTML = "Both input must be filled ";
-        document.getElementById("total").innerHTML = "$ 0";
-        document.getElementById("result").innerHTML = "$ 0";
+        document.getElementById("total").innerHTML = "$ 0.00";
+        document.getElementById("result").innerHTML = "$ 0.00";
        } else{
         document.getElementById("total").innerHTML = "$" + " " +total.toFixed(2);
         document.getElementById("result").innerHTML = "$" + " " + result.toFixed(2);
@@ -91,8 +91,8 @@ function fourth(){
     if(firstValue == "" || secondValue == ""){
         document.getElementById("alert").innerHTML = "Both input must be filled ";
         document.getElementById("notify").innerHTML = "Both input must be filled ";
-        document.getElementById("total").innerHTML = "$ 0";
-        document.getElementById("result").innerHTML = "$ 0";
+        document.getElementById("total").innerHTML = "$ 0.00";
+        document.getElementById("result").innerHTML = "$ 0.00";
        } else{
         document.getElementById("total").innerHTML = "$" + " " +total.toFixed(2);
         document.getElementById("result").innerHTML = "$" + " " + result.toFixed(2);
@@ -117,8 +117,8 @@ function fifth(){
     if(firstValue == "" || secondValue == ""){
         document.getElementById("alert").innerHTML = "Both input must be filled ";
         document.getElementById("notify").innerHTML = "Both input must be filled ";
-        document.getElementById("total").innerHTML = "$ 0";
-        document.getElementById("result").innerHTML = "$ 0";
+        document.getElementById("total").innerHTML = "$ 0.00";
+        document.getElementById("result").innerHTML = "$ 0.00";
        } else{
         document.getElementById("total").innerHTML = "$" + " " +total.toFixed(2);
         document.getElementById("result").innerHTML = "$" + " " + result.toFixed(2);
@@ -145,8 +145,8 @@ function sixth(){
     if(firstValue == "" || secondValue == ""){
         document.getElementById("alert").innerHTML = "Both input must be filled ";
         document.getElementById("notify").innerHTML = "Both input must be filled ";
-        document.getElementById("total").innerHTML = "$ 0";
-        document.getElementById("result").innerHTML = "$ 0";
+        document.getElementById("total").innerHTML = "$ 0.00";
+        document.getElementById("result").innerHTML = "$ 0.00";
        } else{
         document.getElementById("total").innerHTML = "$" + " " +total.toFixed(2);
         document.getElementById("result").innerHTML = "$" + " " + result.toFixed(2);
@@ -158,8 +158,8 @@ function sixth(){
 function reset(){
     const getFirst = document.getElementById("bill");
     const getSecond = document.getElementById("people");
-    document.getElementById("total").innerHTML = "$ 0";
-    document.getElementById("result").innerHTML = "$ 0";
+    document.getElementById("total").innerHTML = "$ 0.00";
+    document.getElementById("result").innerHTML = "$ 0.00";
     getFirst.value = "";
     getSecond.value = "";
     document.getElementById("alert").innerHTML = " ";
